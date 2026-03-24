@@ -1,14 +1,46 @@
 ---
-description: Deploy workflow placeholder
+description: Deploy a project to Cloud Run using gcloud source deploy
 ---
 
-# Deploy Workflow (Placeholder)
+# /deploy
 
-This workflow outlines the steps for deploying a project to Cloud Run. Replace the placeholder commands with your actual deployment steps.
+Deploy the current project to Cloud Run. Uses `--source .` for simplicity (Cloud Build handles Docker).
 
-1. **Build** – `npm run build`
-2. **Package** – `docker build -t gcr.io/<PROJECT_ID>/<SERVICE_NAME>:latest .`
-3. **Push** – `docker push gcr.io/<PROJECT_ID>/<SERVICE_NAME>:latest`
-4. **Deploy** – `gcloud run deploy <SERVICE_NAME> --image gcr.io/<PROJECT_ID>/<SERVICE_NAME>:latest --region europe-west1`
+## Prerequisites
+- `gcloud` authenticated (`gcloud auth login`)
+- Project has a `Dockerfile` in root
+- Working directory is the project root
 
-*Update the `<PROJECT_ID>` and `<SERVICE_NAME>` placeholders before running.*
+## Steps
+
+// turbo
+1. Verify Dockerfile exists — `ls Dockerfile`
+
+// turbo
+2. Verify gcloud auth — `gcloud auth print-access-token > /dev/null 2>&1 && echo "AUTH OK" || echo "AUTH FAIL"`
+
+3. Deploy to Cloud Run:
+```bash
+gcloud run deploy SERVICE_NAME \
+  --source . \
+  --project evident-trees-453923-f9 \
+  --region europe-west1 \
+  --allow-unauthenticated \
+  --memory 128Mi \
+  --cpu 1 \
+  --max-instances 3 \
+  --cpu-throttling
+```
+
+> **Note**: Adjust `SERVICE_NAME` to match the project name.
+> Adjust `--memory` and `--max-instances` based on project type:
+> - Static: `128Mi`, max `3`
+> - Node.js: `256Mi`, max `10`
+> - Heavy: `512Mi`, max `10`
+
+// turbo
+4. Verify deployment — `gcloud run services describe SERVICE_NAME --region europe-west1 --format="value(status.url)"`
+
+5. Report:
+   - **DONE** — deployed successfully, print URL
+   - **BLOCKED** — deployment failed, show error
