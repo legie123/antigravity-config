@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "gmp-code-assist": {
+      "$typeName": "exa.cascade_plugins_pb.CascadePluginCommandTemplate",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@googlemaps/code-assist-mcp@latest"
+      ],
+      "env": {
+        "SOURCE": "antigravity"
+      }
+    },
+    "gke-oss": {
+      "command": "go",
+      "args": [
+        "run",
+        "github.com/GoogleCloudPlatform/gke-mcp@latest"
+      ]
+    },
+    "cloudrun": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@google-cloud/cloud-run-mcp"
+      ]
+    },
+    "google-developer-knowledge": {
+      "serverUrl": "https://api.developers.google.com/mcp/",
+      "headers": {
+        "x-goog-api-key": "AIzaSyBZBrsiMHhpd7smJJ-O4bBz2OBM0l2jDcc"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "language": "ro",
+  "incrementalMode": true,
+  "reporting": {
+    "format": "DONE/BLOCKED/NEXT",
+    "autoReport": true
+  },
+  "workspace": "~/projects/antigravity_workspace",
+  "mcpServers": ["cloudrun", "gmp-code-assist", "gke-oss"]
+
+}
