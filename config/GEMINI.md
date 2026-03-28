@@ -78,9 +78,12 @@
 
 ## 🖥️ Reguli Sistem Local
 
-### Memory & Overclock Management
-- `NODE_OPTIONS="--max-old-space-size=8192"` (Tuning Apple Silicon activat)
-- Dacă RAM free < 1GB → kill Safari, Chrome, Docker
+### Memory & Extreme Overclock Management
+- `NODE_OPTIONS="--max-old-space-size=16384 --max-semi-space-size=512"` (16GB RAM alocați exclusiv v8, tuning agresiv).
+- `TS_NODE_TRANSPILE_ONLY=1` (Activare transpilare TS instant).
+- `UV_THREADPOOL_SIZE=12` și `JOBS=12` (Injecție de putere I/O și asamblare NPM pe absolut toate cele 12 nuclee M-Series).
+- `git config --global core.packedGitLimit 512m` (Buffer masiv local).
+- Dacă RAM free < 2GB → kill Safari, Chrome, Docker
 - `npm config set maxsockets 50` (Pipelining rețea agresiv)
 - Cleanup periodic: `rm -rf ~/.npm/_cacache/*`
 
