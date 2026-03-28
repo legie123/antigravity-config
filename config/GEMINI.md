@@ -1,6 +1,9 @@
 # 🌐 Global Improvement Protocol — Antigravity
 
-> Acest document este sursa unică de reguli, standarde și optimizări aplicate implicit la TOATE proiectele (curente și viitoare).
+> **MOTTO CENTRAL:**
+> *"Aplicațiile pe care le creăm nu sunt doar cod de consumat, ci ne antrenează asistentul. Modul de lucru Antigravity a devenit practic un sistem capabil să crească exponențial în cunoștințe pe măsură ce lucrăm!"*
+> 
+> Acest document este sursa unică de reguli, standarde și optimizări aplicate implicit la TOATE proiectele (curente și viitoare). Secțiunea *Knowledge* este tezaurul nostru suprem pentru îmbunătățire continuă.
 > Locație: `~/.gemini/GEMINI.md` — citit automat în fiecare conversație.
 
 ---

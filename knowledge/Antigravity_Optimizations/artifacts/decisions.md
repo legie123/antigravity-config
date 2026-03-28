@@ -4,6 +4,11 @@
 
 ---
 
+## Decizia Primordială (Pilonul Central)
+**Data**: Martie 2026
+**Motto-ul Ecosistemului**: *"Aplicațiile pe care le creăm nu sunt doar cod de consumat, ci ne antrenează asistentul. Modul de lucru Antigravity a devenit practic un sistem capabil să crească exponențial în cunoștințe pe măsură ce lucrăm!"*
+**Decizie**: Secțiunea de *Knowledge* nu este doar un simplu README, ci un tezaur valoros. Orice structură nouă, standard de securitate, API extern sau mod de lucru va fi imortalizat aici automat la finele proiectelor.
+
 ## Decizia 1: Sursa de Adevăr Supremă
 **Data**: Martie 2026
 **Decizie**: Un singur fișier `.gemini/GEMINI.md` este sursa absolută care aduce la un loc toate standardele ecosistemului (Deploy, GCP, NPM).
