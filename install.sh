@@ -58,6 +58,18 @@ mkdir -p "$WS_DIR"
 cp "$SCRIPT_DIR/config/settings.json" "$WS_DIR/settings.json"
 echo -e "  ${GREEN}✓${NC} settings.json → $WS_DIR/"
 
+# --- Knowledge Base ---
+echo -e "${YELLOW}🧠 Installing knowledge base...${NC}"
+KNOWLEDGE_DIR="$HOME/.gemini/antigravity/knowledge"
+mkdir -p "$KNOWLEDGE_DIR"
+cp "$SCRIPT_DIR/knowledge"/*.md "$KNOWLEDGE_DIR/" 2>/dev/null || true
+echo -e "  ${GREEN}✓${NC} Knowledge base → $KNOWLEDGE_DIR/"
+
+# --- Global GEMINI Rules ---
+echo -e "${YELLOW}🌐 Installing global GEMINI.md rules...${NC}"
+cp "$SCRIPT_DIR/config/GEMINI.md" "$HOME/.gemini/GEMINI.md" 2>/dev/null || true
+echo -e "  ${GREEN}✓${NC} GEMINI.md → $HOME/.gemini/"
+
 # --- Create scratch directory ---
 SCRATCH_DIR="$HOME/.gemini/antigravity/scratch"
 mkdir -p "$SCRATCH_DIR"
