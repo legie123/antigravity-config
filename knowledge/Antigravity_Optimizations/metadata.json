@@ -1,0 +1,12 @@
+{
+  "title": "Antigravity Optimization Protocol",
+  "summary": "Această intrare conține protocolul global de structurare a aplicațiilor, depanarea (troubleshooting) pentru erorile Cloud Run (cold starts, HTTP 429), standardele NGINX/Securitate și deciziile fundamentale de configurare a serverelor.",
+  "createdAt": "2026-03-28T17:55:00Z",
+  "references": [
+    {
+      "type": "conversation",
+      "id": "4c1de285-2cc6-4c98-9af8-fe6a4f6c1e3d",
+      "title": "Antigravity Global Audit"
+    }
+  ]
+}

@@ -62,7 +62,7 @@ echo -e "  ${GREEN}✓${NC} settings.json → $WS_DIR/"
 echo -e "${YELLOW}🧠 Installing knowledge base...${NC}"
 KNOWLEDGE_DIR="$HOME/.gemini/antigravity/knowledge"
 mkdir -p "$KNOWLEDGE_DIR"
-cp "$SCRIPT_DIR/knowledge"/*.md "$KNOWLEDGE_DIR/" 2>/dev/null || true
+cp -R "$SCRIPT_DIR/knowledge"/* "$KNOWLEDGE_DIR/" 2>/dev/null || true
 echo -e "  ${GREEN}✓${NC} Knowledge base → $KNOWLEDGE_DIR/"
 
 # --- Global GEMINI Rules ---

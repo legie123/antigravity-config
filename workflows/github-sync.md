@@ -28,7 +28,7 @@ cp ~/.agents/workflows/*.md ~/.gemini/antigravity/scratch/antigravity-config/wor
 3. Copy knowledge to repo:
 ```bash
 mkdir -p ~/.gemini/antigravity/scratch/antigravity-config/knowledge
-cp ~/.gemini/antigravity/knowledge/*.md ~/.gemini/antigravity/scratch/antigravity-config/knowledge/
+cp -R ~/.gemini/antigravity/knowledge/* ~/.gemini/antigravity/scratch/antigravity-config/knowledge/
 ```
 
 4. Copy configs to repo:
