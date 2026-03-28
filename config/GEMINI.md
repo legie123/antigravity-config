@@ -70,13 +70,18 @@
 - **REGULĂ DE AUR:** Orice extensie sau API nou integrat într-un proiect (ex: conexiuni `neon.tech` Postgres, instanțe `Redis`, Cloud APIs) **TREBUIE** formalizat și documentat imediat în `~/.gemini/antigravity/knowledge/Antigravity_Optimizations/artifacts/integrations.md`.
 - Documentația va conține snippet-uri standardizate pentru reconectare (ex: pool configuration), pachete NPM necesare și limitările platformei, FĂRĂ a include parole sau API Keys (`.env` only). Scopul este *Reutilizarea Instantanee* la orice proiect viitor.
 
+### 🎯 Protocolul Sniper (Precizie Contextuală)
+- **REGULĂ SUPREMĂ**: La fișiere masive (>100 linii), AI-ul NU va rescrie întregul fișier, ci va folosi exclusiv tool-uri precise de patch-ing bazat pe AST sau intervale clare de linii (`replace_file_content`).
+- Extragerea datelor se va face limitat (`tail -n 50`, `jq`), evitând umplerea buffer-ului cu date goale de context.
+
 ---
 
 ## 🖥️ Reguli Sistem Local
 
-### Memory Management
-- `NODE_OPTIONS="--max-old-space-size=2048"` (setat în `.zshrc`)
+### Memory & Overclock Management
+- `NODE_OPTIONS="--max-old-space-size=8192"` (Tuning Apple Silicon activat)
 - Dacă RAM free < 1GB → kill Safari, Chrome, Docker
+- `npm config set maxsockets 50` (Pipelining rețea agresiv)
 - Cleanup periodic: `rm -rf ~/.npm/_cacache/*`
 
 ### Tooling Instalat

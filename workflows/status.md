@@ -7,6 +7,7 @@ description: Check status of all Cloud Run services and system health
 Quick health check of all Cloud Run services and local system.
 
 ## Steps
+// turbo-all
 
 // turbo
 1. List all Cloud Run services:

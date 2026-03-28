@@ -9,6 +9,7 @@ Free up system resources on the Mac.
 // turbo-all
 
 ## Steps
+// turbo-all
 
 1. Kill memory-heavy processes (if not needed):
 ```bash

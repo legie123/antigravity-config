@@ -13,6 +13,7 @@ Când rulezi acest workflow, vei avea nevoie de:
 3. **TYPE** (opțional) — `error` pentru a arăta doar erorile serioase
 
 ## Steps
+// turbo-all
 
 // turbo
 1. Verifică existența serviciului:
