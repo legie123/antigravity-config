@@ -33,7 +33,6 @@ cp ~/.gemini/antigravity/knowledge/*.md ~/.gemini/antigravity/scratch/antigravit
 
 4. Copy configs to repo:
 ```bash
-cp ~/.gemini/antigravity/mcp_config.json ~/.gemini/antigravity/scratch/antigravity-config/config/
 cp ~/projects/antigravity_workspace/.gemini/settings.json ~/.gemini/antigravity/scratch/antigravity-config/config/
 cp ~/.gemini/antigravity/scratch-space-protocol.md ~/.gemini/antigravity/scratch/antigravity-config/config/
 cp ~/.gemini/GEMINI.md ~/.gemini/antigravity/scratch/antigravity-config/config/
