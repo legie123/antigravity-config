@@ -63,6 +63,10 @@
 - `.gitignore` obligatoriu: `node_modules/`, `.DS_Store`, `.env`, `.npm-cache/`
 - Auto-sync disponibil via `/github-sync` workflow
 
+### Knowledge Integration (Extensii & API-uri)
+- **REGULĂ DE AUR:** Orice extensie sau API nou integrat într-un proiect (ex: conexiuni `neon.tech` Postgres, instanțe `Redis`, Cloud APIs) **TREBUIE** formalizat și documentat imediat în `~/.gemini/antigravity/knowledge/Antigravity_Optimizations/artifacts/integrations.md`.
+- Documentația va conține snippet-uri standardizate pentru reconectare (ex: pool configuration), pachete NPM necesare și limitările platformei, FĂRĂ a include parole sau API Keys (`.env` only). Scopul este *Reutilizarea Instantanee* la orice proiect viitor.
+
 ---
 
 ## 🖥️ Reguli Sistem Local
